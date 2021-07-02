@@ -1,9 +1,0 @@
-{
-"resource": "/",
-"path": "/",
-"httpMethod": "POST",
-"body" :{
-"firstname":"kamal",
-"lastname" : "Hrishabh "
-}
-}
