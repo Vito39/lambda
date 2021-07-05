@@ -12,16 +12,15 @@ def handler(event, context):
    body = json.loads(event['body'])
    
    name = body.get("name")
-   id = body.get("id")
 
-   if name==None or name=="" or id==None or id=="":
+   if name==None or name=="" :
       return {
          'statusCode': '200',
-         'body' : 'Please Enter the Name and id'
+         'body' : 'Please Enter the Name'
       }
       
    Has_name = table.get_item(
-      Key={'name':name,'id':id}
+      Key={'name':name}
    )   
    
    
