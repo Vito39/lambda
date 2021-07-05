@@ -70,7 +70,7 @@ functions:
       - http:
           path: get_name
           method: any
-   post_name:
+  post_name:
     handler: post_by_name.handler
     events:
       - http:
