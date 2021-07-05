@@ -8,7 +8,7 @@ def respond(res):
         'body': json.dumps(res['body'], indent=2)
     }
 
-def lambda_handler(event, context):
+def handler(event, context):
     #return respond(event)
     body = json.loads(event['body'])
     fname = body.get("firstname")
